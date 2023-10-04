@@ -139,12 +139,12 @@
     }
 
     #feature .fe-box {
-        width: 155px;
+        width: 150px;
         margin: 0 0 15px 0;
     }
 
     #feature {
-        justify-content: space-between;
+        justify-content: space-around;
     }
     #product1 .pro {
        width: 100%;
