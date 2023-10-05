@@ -1,3 +1,4 @@
+/* *********** Hero-Section ************ */
 #page-header{
     background-image: url(../img/banner/b1.jpg);
     background-size: cover;
@@ -16,6 +17,7 @@
     color: white;
 }
 
+/* *********** Slider-Section ************ */
 #pagination{
     text-align: center;
     padding-top: 0;

@@ -1,3 +1,4 @@
+/* *********** Product-Section ************ */
 #prodetails{
     display: flex;
     margin-top: 20px;
@@ -19,6 +20,7 @@
     cursor: pointer;
 }
 
+/* *********** Product-Detail-Section ************ */
 
 #prodetails .single-pro-details{
     width: 50%;
