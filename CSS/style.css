@@ -170,6 +170,10 @@ body {
   justify-content: center;
 }
 
+.select-none{
+  user-select: none;
+}
+
 #hero h4 {
   padding-bottom: 15px;
 }
