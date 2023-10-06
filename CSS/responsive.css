@@ -115,14 +115,14 @@
 
 /* ************* Mobile*************** */
 @media screen and (max-width:477px) {
+    #Header {
+        padding: 10px 30px;
+    }
     #navbar {
        width: 225px;
     }
     .section-p1{
         padding: 20px;
-    }
-    #header {
-        padding: 10px 30px;
     }
 
     #hero {
