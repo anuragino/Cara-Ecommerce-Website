@@ -52,10 +52,16 @@
         display: none;
     }
 
-    #hero {
-        height: 70vh;
-        padding: 0 80px;
-        background-position: top 30% right 30%;
+    #img-slider .slide .info{
+        padding: 0 40px;
+    }
+
+    #img-slider .slide img {
+        object-position: top 30% right 30%;
+    }
+
+    #img-slider .slide .info h4{
+        padding-bottom: 10px;
     }
 
     #feature {
@@ -110,6 +116,7 @@
     footer {
         margin: 0 0;
     }
+    
 }
 
 
@@ -125,10 +132,18 @@
         padding: 20px;
     }
 
-    #hero {
+    #img-slider .slide .info{
         padding: 0 20px;
-        background-position: 55%;
     }
+
+    #img-slider .slide .info h4{
+        padding-bottom: 7px;
+    }
+
+    #img-slider .slide .info h1{
+        line-height: 1;
+    }
+
 
     h1{
         font-size: 38px;
@@ -181,4 +196,5 @@
     footer .copyright {
         text-align: start;
     }
+
 }

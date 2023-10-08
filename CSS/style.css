@@ -156,33 +156,70 @@ body {
 }
 
 
-/* ************* Homo-Page ******************** */
-#hero {
-  background: url(../img/hero4.png);
+/* ************* Home-Page ******************** */
+
+#img-slider{
   height: 90vh;
   width: 100%;
-  background-size: cover;
-  background-position: top 25% right -20px;
-  padding: 0 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#img-slider .slide{
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  clip-path: circle(0% at 0 50%);
+}
+
+#img-slider .slide.active{
+  clip-path: circle(150% at 0 50%);
+  transition: 2s;
+  transition-property: clip-path;
+}
+
+#img-slider .slide img{
+  z-index: 1;
+  width: 100vw;
+  height: 110vh;
+  border-radius: 5px;
+  object-fit: cover;
+  position: relative;
+  object-fit: cover; 
+  object-position: top 25% right ;
+  margin-top: 100px;
+}
+
+
+#img-slider .slide .info {
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  position: absolute;
+  object-position: cover;
+  top: 50%; 
+  transform: translateY(-50%);
+  padding: 0 80px;
 }
 
 .select-none{
   user-select: none;
 }
 
-#hero h4 {
+#img-slider .slide .info h4 {
   padding-bottom: 15px;
 }
 
-#hero h1 {
+#img-slider .slide .info h1 {
   color: #088178;
 }
 
-#hero button {
+#img-slider .slide .info button {
   background: url(../img/button.png);
   background-color: transparent;
   color: #088178;
@@ -192,6 +229,29 @@ body {
   cursor: pointer;
   font-weight: 700;
   font-size: 15px;
+}
+
+#img-slider .slide-navigation{
+  z-index: 99;
+  position: absolute;
+  display: flex;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#img-slider .slide-navigation .btn{
+  background: #1c1c1cba;
+  width: 12px;
+  height: 12px;
+  margin: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#img-slider .slide-navigation .btn.active{
+  background: #088178;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -610,3 +670,4 @@ footer .copyright {
   width: 100%;
   text-align: center;
 }
+
